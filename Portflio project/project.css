@@ -1,0 +1,623 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000;
+  --btn-color: white;
+  --btn-background: rgb(235, 150, 164);
+  --second-color: rgb(44, 11, 87);
+  --main-color: rgb(235, 150, 164);
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.top-btn {
+  display: inline-block;
+  padding: 9px 30px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  color: var(--btn-background);
+  letter-spacing: 1px;
+  font-size: var(--p-font);
+  font-weight: 500;
+  transition: ease 0.5s;
+}
+.top-btn:hover {
+  transform: scale(1.1);
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: var(--bg-color);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 30px 18%;
+  transition: 0.3s;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+/* .sub-box{
+	padding: 45px 45px 45px 45px;
+	transition: ease .50s;
+	cursor: pointer;
+} */
+.sub-img img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  margin-top: 4rem;
+}
+.sub-box h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(8, 8, 80);
+}
+.sub-box button {
+  padding: 9px 30px;
+  background: var(--btn-background);
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sub-box button:hover {
+  transform: scale(1.1);
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: var(--bg-color);
+}
+.sub-box p {
+  line-height: 2rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nice img {
+  width: 50px;
+}
+.twice img {
+  width: 50px;
+}
+.nice h2 {
+  font-size: 50px;
+}
+.twice h2 {
+  font-size: 50px;
+}
+.twice p {
+  color: rgb(8, 8, 80);
+}
+.nice p {
+  color: rgb(8, 8, 80);
+}
+.container-1 {
+  display: flex;
+  margin-left: 25%;
+  gap: 20rem;
+}
+.nice,
+.twice {
+  line-height: 3rem;
+}
+.imgc img {
+  width: 60%;
+}
+.container-2 {
+  margin-top: 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  gap: 5rem;
+}
+
+.grow p {
+  width: 30rem;
+  color: rgb(8, 8, 80);
+}
+.grow h1 {
+  line-height: 4rem;
+  font-weight: 900;
+  color: rgb(8, 8, 80);
+}
+.imgd img {
+  width: 60%;
+}
+.container-3 {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+.flow p {
+  width: 32rem;
+  color: rgb(8, 8, 80);
+}
+h2,
+h1 {
+  color: rgb(8, 8, 80);
+  line-height: 4rem;
+  font-weight: 900;
+}
+p {
+  color: rgb(8, 8, 80);
+}
+.imgd {
+  margin-left: 15%;
+}
+.flow {
+  margin-right: 5%;
+}
+.imge img {
+  width: 70%;
+}
+.container-4 {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+.imge {
+  margin-left: 10%;
+}
+.users p {
+  width: 32rem;
+}
+.users {
+  margin-left: 15%;
+}
+.container-5 {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+.btn-2 {
+  color: white;
+  background: palevioletred;
+  border: none;
+  padding: 20px;
+  width: 320px;
+  border-radius: 25px;
+  font-size: 17px;
+}
+.container-5 h1 {
+  line-height: 6rem;
+}
+.hudd {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 4.5rem;
+}
+.hudd img {
+  width: 40px;
+}
+.container-6 {
+  font-size: 12px;
+  margin-left: 4.5rem;
+  color: white;
+}
+.container-6 p img {
+  width: 20px;
+}
+.container-6 p {
+  color: #ffffff;
+}
+
+.huddp {
+  line-height: 2rem;
+}
+.huddp img {
+  background-color: #ffffff;
+}
+.huddb img {
+  background-color: white;
+}
+.huddl {
+  padding-bottom: 1rem;
+}
+.icons img {
+  width: 20px;
+  background-color: white;
+}
+.icons {
+  padding-top: 3rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.container-7 h3 {
+  padding-bottom: 1rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+.container-7 p {
+  font-size: 12px;
+  padding-bottom: 1rem;
+  color: white;
+}
+input {
+  padding: 0.6rem;
+  width: 15rem;
+  border: none;
+}
+.btn-new {
+  padding: 0.7rem;
+  width: 8rem;
+  background: rgb(235, 150, 164);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+.sect {
+  display: flex;
+  gap: 6rem;
+  padding-top: 20%;
+  background-image: url("new-images/wavesNegative\ \(3\).svg");
+  background-size: cover;
+}
+
+/* @media all and (max-width:2560px){
+	header img {
+		position: absolute;
+		right: 130rem;
+		width: 400px;
+	  }	
+	  .top-btn {
+	   position: absolute;
+	   left: 140rem;
+	   top: 5rem;
+	   width: 300px;
+	   padding: 30px;
+	   text-align: center;
+	   font-size: 30px;
+	   border-radius: 50px;
+	  }
+	  .sub-box h1 {
+		font-size: 70px;
+	
+	  }
+} */
+
+@media all and (max-width: 992px) {
+  header img {
+    position: absolute;
+    right: 40rem;
+    width: 15%;
+  }
+  .top-btn {
+    margin-top: 2rem;
+    font-size: 12px;
+    margin-left: 17rem;
+    width: 100px;
+    padding: 10px;
+  }
+  .sub-box h1 {
+    font-size: 15px;
+    margin-block-end: -10px;
+  }
+  .sub-box p {
+    font-size: 10px;
+    line-height: normal;
+    margin-block-end: -10px;
+  }
+  .sub-img img {
+    width: 40%;
+    margin-left: 5rem;
+  }
+  .sub-box button {
+    font-size: 8px;
+    padding: 10px;
+  }
+  .nice img {
+    width: 23px;
+  }
+  .nice h2 {
+    font-size: 22px;
+    margin-block-end: -25px;
+    margin-block-start: -25px;
+  }
+  .nice p {
+    font-size: 10px;
+    width: 120px;
+  }
+  .twice img {
+    width: 23px;
+  }
+  .twice h2 {
+    font-size: 22px;
+    margin-block-end: -25px;
+    margin-block-start: -25px;
+  }
+  .twice p {
+    font-size: 10px;
+  }
+  .container-1 {
+    margin-left: 35%;
+    gap: 8rem;
+  }
+  .grow h1 {
+    font-size: 12px;
+    margin-block-end: -17px;
+  }
+  .grow p {
+    font-size: 8px;
+  }
+  .container-2 {
+    margin-left: 25%;
+  }
+  .imgc img {
+    width: 200px;
+    margin-right: 90rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header img {
+    position: absolute;
+    right: 35rem;
+    width: 20%;
+  }
+  .items {
+    margin-right: 6rem;
+  }
+  .top-btn {
+    margin-top: 2rem;
+    font-size: 10px;
+    margin-left: 17rem;
+  }
+  .sub-box h1 {
+    font-size: 20px;
+    margin-block-end: 0%;
+  }
+  .sub-box p {
+    font-size: 12px;
+    line-height: normal;
+    margin-block-end: 0%;
+  }
+  .sub-box button {
+    font-size: 12px;
+  }
+  .sub-img img {
+    width: 80%;
+    margin-left: 5rem;
+  }
+  .sub-service {
+    margin-top: 10rem;
+  }
+  .nice img {
+    width: 30px;
+  }
+  .nice h2 {
+    font-size: 30px;
+  }
+  .nice p {
+    font-size: 12px;
+    width: 120px;
+  }
+  .twice img {
+    width: 30px;
+  }
+  .twice h2 {
+    font-size: 30px;
+  }
+  .twice p {
+    font-size: 12px;
+  }
+  .container-1 {
+    display: flex;
+    margin-left: 25%;
+    gap: 8rem;
+  }
+  .container-2 {
+    display: inline-block;
+    align-content: center;
+    margin-left: 15%;
+    text-align: center;
+  }
+  .grow h1 {
+    font-size: 17px;
+    margin-block-end: -10px;
+  }
+  .grow p {
+    font-size: 12px;
+    margin-block-end: 2rem;
+  }
+  .imgc img {
+    width: 230px;
+  }
+  .container-3 {
+    display: inline-block;
+    align-content: center;
+    margin-left: 15%;
+    text-align: center;
+  }
+  .flow h1 {
+    font-size: 17px;
+    margin-block-end: -10px;
+  }
+  .flow p {
+    font-size: 12px;
+    margin-block-end: 2rem;
+  }
+  .imgd img {
+    width: 230px;
+    margin-right: 4rem;
+  }
+  .container-4 {
+    display: inline-block;
+    align-content: center;
+    margin-left: 8%;
+    text-align: center;
+  }
+  .users h1 {
+    font-size: 17px;
+    margin-block-end: -10px;
+  }
+  .imge img {
+    width: 230px;
+    margin-left: 3rem;
+  }
+  .users p {
+    font-size: 12px;
+    margin-block-end: 2rem;
+  }
+  .container-5 {
+    margin-right: 8%;
+  }
+  .container-5 h1 {
+    font-size: 15px;
+    margin-block-end: -20px;
+  }
+  .btn-2 {
+    font-size: 12px;
+    width: 150px;
+    padding: 5px;
+  }
+  .sect {
+    display: none;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .top-btn {
+    position: absolute;
+    top: 7.5rem;
+    left: 25%;
+  }
+  .next {
+    position: absolute;
+    left: 12%;
+  }
+  .sub-box h1 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 1rem;
+  }
+  .sub-box p {
+    font-size: 12px;
+    line-height: normal;
+    position: absolute;
+    top: 15rem;
+    left: 2.5rem;
+  }
+  .sub-box button {
+    width: 200px;
+    margin-right: 7%;
+    font-size: 12px;
+  }
+  .sub-img img {
+    width: 300px;
+  }
+  .nice img {
+    width: 30px;
+  }
+  .nice h2 {
+    font-size: 19px;
+    display: inline-block;
+  }
+
+  .twice h2 {
+    font-size: 19px;
+    display: inline-flex;
+  }
+  .twice,
+  .nice {
+    line-height: 25px;
+  }
+  .twice img {
+    width: 30px;
+  }
+  .container-1 {
+    display: block;
+    margin-left: 8rem;
+  }
+  .container-2 {
+    display: inline-block;
+    text-align: center;
+    margin-right: 25%;
+  }
+  .container-2 h1 {
+    font-size: 18px;
+  }
+  .container-2 p {
+    width: 100%;
+    margin-block-end: 2rem;
+  }
+  .container-2 img {
+    margin-block-end: 2rem;
+  }
+  .container-3 {
+    display: inline-block;
+    text-align: center;
+  }
+  .imgd {
+    margin-right: 5rem;
+  }
+  .container-3 h1 {
+    font-size: 18px;
+  }
+  .container-3 p {
+    width: 100%;
+  }
+  .container-3 img {
+    margin-block-end: 2rem;
+  }
+  .container-4 {
+    display: inline-block;
+    text-align: center;
+    margin-right: 19%;
+  }
+  .container-4 h1 {
+    font-size: 18px;
+  }
+  .container-4 p {
+    width: 100%;
+    margin-block-end: 5rem;
+  }
+  .btn-2 {
+    color: white;
+    background: palevioletred;
+    border: none;
+    padding: 12px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 13px;
+  }
+  .container-5 h1 {
+    line-height: 4rem;
+    font-size: 15px;
+  }
+  .sect {
+    display: none;
+  }
+}
